@@ -7,7 +7,7 @@
 6 silly lifecycle wsgame@0.0.0~prestart: no script for prestart, continuing
 7 info lifecycle wsgame@0.0.0~start: wsgame@0.0.0
 8 verbose lifecycle wsgame@0.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle wsgame@0.0.0~start: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/frame/PhpstormProjects/wsGame/node_modules/.bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin:/home/frame/.npm-global/bin:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin:/home/frame/.npm-global/bin:/home/frame/Public/mongodb/mongodb-linux-x86_64-ubuntu1404-3.4.2/bin
+9 verbose lifecycle wsgame@0.0.0~start: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/frame/PhpstormProjects/wsGame/node_modules/.bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin:/home/frame/.npm-global/bin:/home/frame/Public/mongodb/mongodb-linux-x86_64-ubuntu1404-3.4.2/bin:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin:/home/frame/.npm-global/bin:/home/frame/Public/mongodb/mongodb-linux-x86_64-ubuntu1404-3.4.2/bin
 10 verbose lifecycle wsgame@0.0.0~start: CWD: /home/frame/PhpstormProjects/wsGame
 11 silly lifecycle wsgame@0.0.0~start: Args: [ '-c', 'node ./bin/www' ]
 12 silly lifecycle wsgame@0.0.0~start: Returned: code: 1  signal: null
