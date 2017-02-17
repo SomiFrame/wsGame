@@ -1,11 +1,11 @@
-import Material from './Class_Material';
-import Tubing from './Class_Tubing';
+// import Material from './Class_Material';
+// import Tubing from './Class_Tubing';
 require('../../sass/game.scss');
 var io = require('socket.io-client');
 let LoopID;
 let gameCanvas = document.getElementById('gameArea');
 let gameCtx = gameCanvas.getContext('2d');
-var socket = io();
+var socket = io.connect('http://localhost:3000/game');
 socket.on('init', function (e) {
     gameCanvas.width = e.width;
     gameCanvas.height = e.height;

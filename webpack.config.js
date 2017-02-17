@@ -13,7 +13,7 @@ var pathconfig = {
 };
 module.exports = {
     entry: {
-        "/javascripts/b-index": pathconfig.sourceES5path + '/index.js',
+        // "/javascripts/b-index": pathconfig.sourceES5path + '/index.js',
         "/javascripts/b-game": pathconfig.sourceES6path + '/Game.js'
     },
     output: {
