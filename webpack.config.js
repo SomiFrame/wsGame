@@ -1,5 +1,4 @@
 const path = require('path');
-console.log(123);
 var pathconfig = {
     public: path.join(__dirname, 'public'),
     publicJs: path.join(__dirname, 'public', 'javascripts'),
@@ -37,6 +36,13 @@ module.exports = {
             {
                 test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
                 loader: 'file-loader'
+            },
+            {
+                test: /\.(jpe?g|png|gif)$/i,
+                loaders: [
+                    'file?hash=sha512&digest=hex&name=[hash].[ext]',
+                    'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+                ]
             }
         ]
     },

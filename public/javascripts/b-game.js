@@ -48,12 +48,22 @@
 
 	// import Material from './Class_Material';
 	// import Tubing from './Class_Tubing';
+
 	__webpack_require__(1);
 	var io = __webpack_require__(10);
 	var LoopID = void 0;
 	var gameCanvas = document.getElementById('gameArea');
 	var gameCtx = gameCanvas.getContext('2d');
 	var socket = io.connect('http://localhost:3000/game');
+	//create a image of brid
+	// var dlimage = new Image();
+	// dlimage.src=require('../../images/brid.png');
+	var bridimg = document.createElement('img');
+	var pat;
+	bridimg.addEventListener('load', function () {
+	    pat = gameCtx.createPattern(bridimg, "repeat");
+	});
+	bridimg.src = __webpack_require__(64);
 	socket.on('init', function (e) {
 	    gameCanvas.width = e.width;
 	    gameCanvas.height = e.height;
@@ -61,15 +71,16 @@
 	socket.on('change', function (e) {
 	    var ballPack = e['ballPack'];
 	    var tubingPack = e['tubingPack'];
+	    console.log(ballPack);
 	    gameCtx.clearRect(0, 0, gameCanvas.width, gameCanvas.height);
 	    // gameCtx.fillStyle = 'rgba(0,0,0,0.1)';
 	    // gameCtx.fillRect(0, 0, gameCanvas.width, gameCanvas.height);
 	    for (var b = 0; b < ballPack.length; b++) {
 	        var ball = ballPack[b];
 	        gameCtx.beginPath();
-	        gameCtx.fillStyle = ball.color;
-	        gameCtx.arc(gameCanvas.width / 2, ball.y, ball.r, 0, Math.PI * 2, ball.color);
-	        gameCtx.closePath();
+	        // gameCtx.fillStyle = pat;
+	        // gameCtx.arc(gameCanvas.width / 2, ball.y, ball.r, 0, Math.PI * 2);
+	        gameCtx.drawImage(bridimg, gameCanvas.width / 2, ball.y);
 	        gameCtx.fill();
 	    }
 	    for (var t = 0; t < tubingPack.length; t++) {
@@ -9185,6 +9196,12 @@
 	};
 
 
+
+/***/ },
+/* 64 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "dbd7860bf9543c61d0c4b0244f7da613.png";
 
 /***/ }
 /******/ ]);

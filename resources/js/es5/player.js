@@ -24,7 +24,6 @@ var player = function () {
         _this.self.ballOption.sy += _this.self.ballOption.gv;
         _this.self.ball.x += _this.self.ballOption.sx;
         _this.self.ball.y += _this.self.ballOption.sy;
-        _this.self.ball.r = 10;
     };
     return _this;
 };
