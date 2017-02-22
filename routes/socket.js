@@ -8,8 +8,8 @@ function _socketio(server) {
     var uuid = require('node-uuid');
     //画布
     var canvas = {
-        width: 1000,
-        height: 600
+        width: 400,
+        height: 300
     };
     var SocketList = {};
     var PlayerList = {};

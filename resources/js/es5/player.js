@@ -9,7 +9,7 @@ var player = function () {
             ball: {
                 x: canvas.width / 2,
                 y: canvas.height / 2,
-                r: 20,
+                r: 30,
                 color: color
             },
             ballOption: {
