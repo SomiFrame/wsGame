@@ -10,6 +10,6 @@ var Player = require('../resources/js/es5/player.js');
 //油管
 var Tubing = require('../resources/js/es5/tubing.js');
 router.get('/', function (req,res,next) {
-    res.render('gameone',{});
+    res.render('flappybird',{});
 });
 module.exports = router;

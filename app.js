@@ -12,7 +12,7 @@ var db = monk('localhost:27017/wsGame');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-var game = require('./routes/game');
+var flappybird = require('./routes/flappybird');
 
 var app = express();
 
@@ -36,7 +36,7 @@ app.use(function (req, res, next) {
 
 app.use('/', index);
 app.use('/users', users);
-app.use('/game', game);
+app.use('/flappybird', flappybird);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

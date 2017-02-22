@@ -22,7 +22,7 @@ var pathconfig = {
 module.exports = {
     entry: {
         // "/javascripts/b-index": pathconfig.sourceES5path + '/index.js',
-        "/javascripts/b-game": pathconfig.sourceES6path + '/Game.js'
+        "/javascripts/b-flappybird": pathconfig.sourceES6path + '/flappybird.js'
     },
     output: {
         path: pathconfig.public,
